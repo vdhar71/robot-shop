@@ -1,13 +1,13 @@
-Steps to run the robot-shop application on K8s:
+# Steps to run the robot-shop application on K8s:
 
 The following steps outline the necessary steps involved in running the robot-shop
 application on minikube
 
 Stop the minikube
-minikube stop
+\# minikube stop
 
 Start the minikube
-minikube start
+\# minikube start
 
 Navigate to 'helm' directory under robot-shop. The following example is with Helm 3.x:
 $ kubectl create ns robot-shop
