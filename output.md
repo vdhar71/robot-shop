@@ -46,5 +46,46 @@ Go to Settings -> Branches -> Branch Protection Rules -> Add branch protection r
 
 ![Add branch protection rule] (https://github.com/vdhar71/robot-shop/blob/master/GIT-branch-protection.png)
 
+# Final image:
+! [Could change name and build the application] (https://github.com/vdhar71/robot-shop/blob/master/final-robot-shop.png)
 
+I am running my application an Apple Silicon MacBook Pro. Per documentation, there is limitation. I made changes to the 
+robot-shop/web/static/index.html and tried to build using docker-compose build, but it failed.
+
+dhar-arm:robot-shop vidyadhar$ docker-compose build
+WARN[0000] The "INSTANA_AGENT_KEY" variable is not set. Defaulting to a blank string.
+[+] Building 0.0s (0/0)
+[+] Building 0.0s (0/0)
+[+] Building 0.0s (0/0)
+[+] Building 0.0s (0/0)
+[+] Building 0.2s (1/1)
+ => [internal] load build definition from Dockerfile                                                                                   0.0s
+[+] Building 0.3s (2/2)
+ => [internal] load build definition from Dockerfile                                                                                   0.0s
+[+] Building 0.2s (1/2)
+ => [internal] load build definition from Dockerfile                                                                                   0.0s
+[+] Building 0.2s (1/1)
+ => [internal] load build definition from Dockerfile                                                                                   0.0s
+[+] Building 0.5s (2/3)
+ => [internal] load build definition from Dockerfile                                                                                   0.0s
+ => => transferring dockerfile: 32B                                                                                                    0.0s
+[+] Building 0.3s (2/2)
+ => [internal] load build definition from Dockerfile                                                                                   0.0s
+[+] Building 0.3s (2/2)
+ => [internal] load build definition from Dockerfile                                                                                   0.0s
+[+] Building 0.3s (2/2)
+ => [internal] load build definition from Dockerfile                                                                                   0.0s
+[+] Building 0.6s (2/3)
+[+] Building 0.5s (2/3)
+[+] Building 0.5s (2/3)
+[+] Building 0.8s (3/3) FINISHED
+ => [internal] load build definition from Dockerfile                                                                                   0.0s
+ => => transferring dockerfile: 32B                                                                                                    0.0s
+[+] Building 0.6s (3/3) FINISHED
+ => [internal] load build definition from Dockerfile                                                                                   0.0s
+ => => transferring dockerfile: 32B                                                                                                    0.0s
+ => [internal] load .dockerignore                                                                                                      0.0s
+ => => transferring context: 2B                                                                                                        0.0s
+ => CANCELED [internal] load metadata for docker.io/library/node:14                                                                    0.3s
+failed to solve: rpc error: code = Unknown desc = failed to solve with frontend dockerfile.v0: failed to create LLB definition: no match for platform in manifest sha256:8cf035b14977b26f4a47d98e85949a7dd35e641f88fc24aa4b466b36beecf9d6: not found
 
