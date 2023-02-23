@@ -40,6 +40,7 @@ $ docker-compose -f docker-compose.yaml -f docker-compose-load.yaml up
 1. GIT keeps an account of all the commit logs which will lost lost otherwise. There will be not accountability and credibility.
 2. When we do a merge, we will get to know about the merge conflicts.
 3. Copy/paste can introduce unintended results.
+4. More importantly, there is no Peer-review.
 
 # How can you prevent it:
 Go to Settings -> Branches -> Branch Protection Rules -> Add branch protection rule
